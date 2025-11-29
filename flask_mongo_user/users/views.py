@@ -2,9 +2,9 @@ from flask import render_template, redirect, request, url_for, flash, abort
 from flask_mail import Message
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from itsdangerous.exc import SignatureExpired
-from mosk import app, db, mail, bcrypt, um
-from mosk.users import users
-from mosk.users.forms import SignUpForm, LoginForm, EditProfileForm, EmailForm, ResetPasswordForm
+from flask_mongo_user import app, db, mail, bcrypt, um
+from flask_mongo_user.users import users
+from flask_mongo_user.users.forms import SignUpForm, LoginForm, EditProfileForm, EmailForm, ResetPasswordForm
 from datetime import datetime
 from random import randint
 

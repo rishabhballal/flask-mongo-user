@@ -7,4 +7,4 @@ gen = Blueprint(
     static_url_path='/gen/static'
 )
 
-from mosk.gen import views
+from flask_mongo_user.gen import views

@@ -1,6 +1,6 @@
 from wtforms import Form, StringField, PasswordField
 from wtforms.validators import Length, Regexp, EqualTo, ValidationError
-from mosk import db, um, bcrypt
+from flask_mongo_user import db, um, bcrypt
 
 def required(form, field):
     if len(field.data) == 0:

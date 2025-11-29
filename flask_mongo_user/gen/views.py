@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, render_template, request
-from mosk import um
-from mosk.gen import gen
+from flask_mongo_user import um
+from flask_mongo_user.gen import gen
 
 @gen.route('/')
 def home():

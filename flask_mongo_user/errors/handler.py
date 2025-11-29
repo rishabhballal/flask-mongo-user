@@ -1,7 +1,7 @@
 from flask import render_template
 from werkzeug.exceptions import HTTPException
-from mosk import um
-from mosk.errors import errors
+from flask_mongo_user import um
+from flask_mongo_user.errors import errors
 
 @errors.app_errorhandler(HTTPException)
 def error_handler(error):

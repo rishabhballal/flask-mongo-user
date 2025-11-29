@@ -9,4 +9,4 @@ users = Blueprint(
     url_prefix='/account'
 )
 
-from mosk.users import views
+from flask_mongo_user.users import views

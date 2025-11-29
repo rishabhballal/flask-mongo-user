@@ -8,4 +8,4 @@ errors = Blueprint(
     static_url_path='/errors/static',
 )
 
-from mosk.errors import handler
+from flask_mongo_user.errors import handler
