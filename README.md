@@ -1,8 +1,8 @@
-# mosk (mongo db + flask) user portal
+# flask + mongo db user portal
 
-initialise config.py within the mosk subdirectory:
+initialise config.py within the flask_mongo_user subdirectory:
 ```
-# /mosk/config.py
+# /flask_mongo_user/config.py
 class Config:
   SECRET_KEY = <secret_key>
   FLASK_APP = 'wsgi.py'
